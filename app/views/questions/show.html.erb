@@ -1,2 +1,5 @@
 <% title(@question.inquiry, "Questions") %>
+
 <h2><%= @question.inquiry %></h2>
+
+<%= link_to "Edit Question", edit_question_path(@question) %>

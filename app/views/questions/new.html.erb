@@ -1,13 +1,2 @@
 <h2>New Question</h2>
-<%= form_for(@question) do |f| %>
-<%= f.error_messages %>
-  <p>
-    <%= f.label :inquiry %><br />
-    <%= f.text_field :inquiry %>
-  </p>
-
-  <p>
-    <%= f.label :answer %><br />
-    <%= f.text_field :answer %>
-  <%= f.submit %>
-<% end %>
+<%= render "form" %>
