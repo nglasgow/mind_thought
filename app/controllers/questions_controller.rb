@@ -18,7 +18,8 @@ class QuestionsController < ApplicationController
       flash[:novice] = "Question has been created."
       redirect_to @question
     else
-      # nothing, yet
+      flash[:alert] = "Question has not been created."
+      render :action => "new"
     end
   end
 end
